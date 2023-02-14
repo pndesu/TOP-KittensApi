@@ -1,0 +1,9 @@
+<h3> Name: <%=@kitten.name%></h3>
+<p> Age: <%=@kitten.age%></p>
+<p> Softness: <%=@kitten.softness%></p>
+<p> Cuteness: <%=@kitten.cuteness%></p>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Edit", edit_kitten_path %>
+<%= link_to "Destroy", kitten_path, data: {turbo_method: :delete} %>
+
